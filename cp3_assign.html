@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>cp3 assignment</title>
+    </head>
+    <body>
+        <div id="app"></div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.1.0/umd/react.development.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.1.0/umd/react-dom.development.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+     <script type="text/babel">
+        class Picture extends React.Component {
+            render() {
+                return (
+                    <div>
+                        <img src="https://d279m997dpfwgl.cloudfront.net/wp/2018/09/1.-Rembrandt-The-Storm-on-the-Sea-of-Galilee-1000x1254.jpg" alt="-Rembrandt-The-Storm-on-the-Sea-of-Galilee-1000x1254"/>
+                    </div>
+                );
+            }
+        }
+        ReactDOM.render(
+            <Picture />, document.getElementById('app')
+         );
+     </script>
+    </body>
+</html>
