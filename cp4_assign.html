@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>cp4 assignment</title>
+    </head>
+    <body>
+        <div id="app"></div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.1.0/umd/react.development.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.1.0/umd/react-dom.development.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+     <script type="text/babel">
+        class Picture extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {
+                    subHeader: "Rembrandt",
+                    date: "1633"
+                }
+            }
+            render() {
+                return (
+                    <div>
+                        <img src="https://d279m997dpfwgl.cloudfront.net/wp/2018/09/1.-Rembrandt-The-Storm-on-the-Sea-of-Galilee-1000x1254.jpg" alt="-Rembrandt-The-Storm-on-the-Sea-of-Galilee-1000x1254"/>
+                        <h1>{this.props.title}</h1>
+                        <h3>{this.state.subHeader}</h3>
+                        <h4>{this.state.date}</h4>
+                    </div>
+                );
+            }
+        }
+        ReactDOM.render(
+            <Picture title="The Storm on the Sea of Galilee"/>, document.getElementById('app')
+         );
+     </script>
+    </body>
+</html>
